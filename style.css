@@ -1,0 +1,20 @@
+
+
+
+
+
+
+
+
+
+
+
+/*#regiao topo*/
+
+.site .topo .lado_a_lado{
+    display: flex;
+}
+
+.site .topo .lado_a_lado .tel_topo{
+    display: flex   ;
+}
