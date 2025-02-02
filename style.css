@@ -16,17 +16,7 @@ body {
 /*#endregion*/
 
 
-
-
-
-
-
-
-
-
-
-/*#regiao topo*/
-
+/*#region topo*/
 .site .topo .lado_a_lado{
     display: flex;
 }
@@ -34,3 +24,4 @@ body {
 .site .topo .lado_a_lado .tel_topo{
     display: flex   ;
 }
+/*#endregion*/
