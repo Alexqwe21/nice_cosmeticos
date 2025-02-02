@@ -1,15 +1,19 @@
 /*#region global*/
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.site{
+.site {
     width: 100%;
     max-width: 1200px;
-    margin:  0 auto;
+    margin: 0 auto;
+}
+
+:root{
+  --cor-de-icone:#774A07;
+
 }
 /*#endregion*/
 
@@ -25,18 +29,16 @@ body {
 
 /*#region topo*/
 
-.site .topo{
-   
-}
+.site .topo {}
 
-.site .topo .lado_a_lado{
+.site .topo .lado_a_lado {
     display: flex;
     justify-content: space-between;
 }
 
-.site .topo .lado_a_lado .tel_topo{
+.site .topo .lado_a_lado .tel_topo {
     display: flex;
-    
+
 }
 
 
@@ -45,7 +47,7 @@ body {
 /*#region hearder*/
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 10px 20px;
     background-color: white;
@@ -82,4 +84,20 @@ nav ul li a {
     padding: 10px 15px;
 }
 
+.fa-whatsapp {
+    font-size: 20pt;
+    color: var(--cor-de-icone);
+    margin-left: 10px;
+    
+}
+
+.Entre-em-contato{
+    border: 2px solid #333;
+    padding: 0px ;
+    border-radius: 25px;
+    display: inline-block
+
+    
+
+}
 /*#endregion*/
