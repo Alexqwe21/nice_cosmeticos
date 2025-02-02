@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 /*#endregion*/
 
 /*#region body*/
@@ -13,48 +14,58 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 
 }
+
 /*#endregion*/
 
 /*#region topo*/
-.site .topo .lado_a_lado{
+.site .topo .lado_a_lado {
     display: flex;
 }
 
-.site .topo .lado_a_lado .tel_topo{
-    display: flex   ;
+.site .topo .lado_a_lado .tel_topo {
+    display: flex;
 }
+
 /*#endregion*/
 
+/*#region hearder*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+}
+
+.logo img {
+    height: 100px;
+
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    padding: 0;
+}
+
+nav ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 10px 15px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*#endregion*/
