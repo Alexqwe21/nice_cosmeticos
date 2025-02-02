@@ -25,18 +25,26 @@ body {
 
 /*#region topo*/
 
-.site .topo{
-   
-}
-
 .site .topo .lado_a_lado{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    height: 60px;
 }
 
 .site .topo .lado_a_lado .tel_topo{
     display: flex;
     
+}
+
+.site .topo .lado_a_lado .lupa_sacola .fa-magnifying-glass{
+
+margin-right: 40px;
+font-size: 20pt;
+}
+
+.site .topo .lado_a_lado .lupa_sacola .fa-bag-shopping{
+font-size: 20pt;
 }
 
 
