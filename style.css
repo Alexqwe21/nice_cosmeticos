@@ -41,14 +41,21 @@ body {
 
 }
 
+
+.site .topo .lado_a_lado .tel_topo  .fa-phone{
+    margin-right: 10px;
+}
+
 .site .topo .lado_a_lado .lupa_sacola .fa-magnifying-glass{
 
 margin-right: 40px;
 font-size: 20pt;
+color: var(--cor-de-icone);
 }
 
 .site .topo .lado_a_lado .lupa_sacola .fa-bag-shopping{
 font-size: 20pt;
+color: var(--cor-de-icone);
 }
 
 
