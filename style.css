@@ -1,8 +1,15 @@
 /*#region global*/
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+.site{
+    width: 100%;
+    max-width: 1200px;
+    margin:  0 auto;
 }
 /*#endregion*/
 
@@ -16,13 +23,22 @@ body {
 /*#endregion*/
 
 /*#region topo*/
+
+.site .topo{
+   
+}
+
 .site .topo .lado_a_lado{
     display: flex;
+    justify-content: space-between;
 }
 
 .site .topo .lado_a_lado .tel_topo{
-    display: flex   ;
+    display: flex;
+    
 }
+
+
 /*#endregion*/
 
 
