@@ -11,10 +11,16 @@
     margin: 0 auto;
 }
 
-:root{
-  --cor-de-icone:#774A07;
+:root {
+    --cor-de-icone: #774A07;
+    --cor-da-letrapreco: #101010;
+    --cor-da-letra-produto: #FFFFFF;
+    --cor-do-fundo-produtos: #D4D4D4;
+    --cor-do-fundo-da-borda: #BCA078;
+    --cor-da-letras: #9B7235;
 
 }
+
 /*#endregion*/
 
 /*#region body*/
@@ -29,7 +35,7 @@ body {
 
 /*#region topo*/
 
-.site .topo .lado_a_lado{
+.site .topo .lado_a_lado {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -42,26 +48,27 @@ body {
 }
 
 
-.site .topo .lado_a_lado .tel_topo  .fa-phone{
+.site .topo .lado_a_lado .tel_topo .fa-phone {
     margin-right: 10px;
 }
 
-.site .topo .lado_a_lado .lupa_sacola .fa-magnifying-glass{
+.site .topo .lado_a_lado .lupa_sacola .fa-magnifying-glass {
 
-margin-right: 40px;
-font-size: 20pt;
-color: var(--cor-de-icone);
+    margin-right: 40px;
+    font-size: 20pt;
+    color: var(--cor-de-icone);
 }
 
-.site .topo .lado_a_lado .lupa_sacola .fa-bag-shopping{
-font-size: 20pt;
-color: var(--cor-de-icone);
+.site .topo .lado_a_lado .lupa_sacola .fa-bag-shopping {
+    font-size: 20pt;
+    color: var(--cor-de-icone);
 }
 
 
 /*#endregion*/
 
 /*#region hearder*/
+
 header {
     display: flex;
     justify-content: space-around;
@@ -105,16 +112,412 @@ nav ul li a {
     font-size: 20pt;
     color: var(--cor-de-icone);
     margin-left: 10px;
-    
+
 }
 
-.Entre-em-contato{
+.Entre-em-contato {
     border: 2px solid #333;
-    padding: 0px ;
+    padding: 0px;
     border-radius: 25px;
     display: inline-block
+}
 
-    
+/*#endregion*/
+
+/*#region produtos*/
+
+
+.Produtos {
+    text-align: center;
+    margin-top: 20px;
+    color: var(--cor-de-icone);
+}
+
+.Imgaens-produtos {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.Imgaens-produtos figure {
+
+    width: 200%;
+    height: auto;
+}
+
+.Imgaens-produtos img {
+    width: 50%;
+    height: auto;
+}
+
+.Imgaens-produtos figcaption {
+    margin-top: 10px;
+    font-size: 10px;
+    font-weight: bold;
+    color: var(--cor-de-icone);
+}
+
+.Preco {
+    margin-top: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--cor-da-letrapreco);
 
 }
+
+.Preco button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(252, 250, 250);
+    text-decoration: none;
+    border: 2px solid #BCA078;
+    border-radius: 30px;
+    /* Arredonda as bordas */
+    background: var(--cor-do-fundo-da-borda);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
 /*#endregion*/
+
+/*#region pele perfeita*/
+
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 400%;
+    background-color: var(--cor-do-fundo-produtos);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-height: 500%;
+}
+
+.texto {
+    flex: 1;
+    padding: 20px;
+
+}
+
+.texto h3 {
+    font-size: 14px;
+    color: var(--cor-da-letrapreco);
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+    font-weight: bold;
+
+}
+
+.texto h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    line-height: 1.4;
+    margin-top: 10px;
+}
+
+.texto p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 30px;
+    /* Arredonda as bordas */
+    background: transparent;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.container-antes-depois {
+    display: flex;
+    justify-content: space-between;
+    /* Espaço entre as imagens */
+    align-items: center;
+    /* Alinhar verticalmente */
+}
+
+.before_image,
+.after_image {
+    flex: 1;
+    /* Cada parte ocupa metade do espaço disponível */
+    text-align: center;
+    /* Centraliza o texto */
+}
+
+.before_image img,
+.after_image img {
+    width: 80%;
+    /* Ajuste para o tamanho desejado */
+    height: auto;
+    /* Mantém a proporção da imagem */
+}
+
+
+/*#endregion*/
+
+/*#region nosso segredo*/
+
+.container-nosso-segredo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+    text-align: center;
+
+    & .texto-pele {
+
+
+        & h3 {
+            margin-top: auto;
+
+        }
+
+        & h1 {
+            margin-top: auto;
+            color: var(--cor-da-letras)
+        }
+
+
+    }
+}
+
+
+.pele-com-aparencia-mais-jovem {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    .texto-box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+
+        & .primeiro,
+        .meio,
+        .final {
+            color: #5f5f5f;
+
+            & h3 {}
+
+            & h4 {
+                color: #1B1B1B;
+                margin-top: 20px;
+            }
+        }
+
+        .linha-vertical {
+            width: 2px;
+            height: 200px;
+            background-color: #c4b7a6;
+            margin: 0 20px;
+
+
+
+        }
+
+    }
+}
+
+/*#endregion*/
+
+/*#region carrossel*/
+.carrossel-container {
+    max-width: 800px;
+    margin: auto;
+
+    & h4 {
+        text-align: center;
+    }
+
+    & h2 {
+        text-align: center;
+        color: var(--cor-da-letras);
+    }
+
+    & .carrossel {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+
+        & .slides {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            transition: transform 0.5s ease;
+
+            & .slide1 {
+                flex: 1 0 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                & img {
+                    width: 100px;
+                    height: auto;
+                    display: block;
+                }
+
+                & h3 {
+                    color: var(--cor-da-letras);
+                }
+            }
+
+
+            & .slide2 {
+                flex: 1 0 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                & img {
+                    width: 100px;
+                    height: auto;
+                    display: block;
+                    margin: auto;
+                }
+
+                & h3 {
+                    color: var(--cor-da-letras);
+                }
+            }
+
+            & .slide3 {
+                flex: 1 0 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                & img {
+                    width: 150px;
+                    height: auto;
+                    display: block;
+                    margin: auto;
+                }
+
+                & h3 {
+                    color: var(--cor-da-letras);
+                }
+            }
+        }
+    }
+
+    & .dots {
+        margin-top: 10px;
+        text-align: center;
+
+        & .dot {
+            height: 12px;
+            width: 12px;
+            margin: 0 5px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        & .dot.active {
+            background: var(--cor-da-letras)
+        }
+
+    }
+}
+
+/*#endregion*/
+
+.Felicidade {
+    margin: auto;
+    margin-top: 50px;
+
+    & .contexto {
+        text-align: center;
+
+        & h1 {
+            padding: 15px;
+            color: var(--cor-de-icone);
+        }
+
+        & h4 {}
+    }
+
+    & .Expert {
+        margin: auto;
+        margin-top: 50px;
+
+        & img{
+            width: 45%;
+            padding-left: 20px;
+            
+        }
+
+
+        & h3 {
+            text-align: right;
+            padding-right: 18%;
+            position: relative;
+
+
+            &::after {
+                content: "";
+                position: absolute;
+                left: 72%;
+                bottom: -5px;
+                width: 25%;
+                height: 2px;
+                background-color: black;
+                transform: translateX(-50%);
+
+
+            }
+        }
+
+
+
+        & .icon {
+
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            /* Duas colunas */
+            grid-template-rows: auto auto auto;
+            /* Duas linhas */
+            gap: 200px;
+            /* Espaçamento entre os ícones */
+            justify-items: center;
+            align-items: center;
+            width: 200px;
+            /* Ajuste conforme necessário */
+            margin: auto;
+            margin-top: 40px;
+            padding-left: 16%;
+
+            & button {
+                grid-column: span 2;
+                position: relative;
+                top: -400px;
+            }
+
+            & img{
+                width: 70px;
+            }
+
+        }
+
+    }
+}
