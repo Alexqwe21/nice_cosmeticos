@@ -131,58 +131,62 @@ nav ul li a {
 
 /*#region produtos*/
 
+.sugeridos {
 
-.Produtos {
-    text-align: center;
-    margin-top: 20px;
-    color: var(--cor-de-icone);
-}
+    & .carrossel1 {
 
-.Imgaens-produtos {
-    display: flex;
-    justify-content: center;
-    gap: 100px;
-}
+        & .Produtos {
+            text-align: center;
+            margin-top: 20px;
+            color: var(--cor-de-icone);
 
-.Imgaens-produtos figure {
+            & .Imgaens-produtos {
+                display: flex;
+                justify-content: center;
+                gap: 100px;
 
-    width: 200%;
-    height: auto;
-}
+                & figure {
+                    width: 200%;
+                    height: auto;
+                }
 
-.Imgaens-produtos img {
-    width: 50%;
-    height: auto;
-}
+                & img {
+                    width: 50%;
+                    height: auto;
+                }
 
-.Imgaens-produtos figcaption {
-    margin-top: 10px;
-    font-size: 10px;
-    font-weight: bold;
-    color: var(--cor-de-icone);
-}
+                & figcaption {
+                    margin-top: 10px;
+                    font-size: 10px;
+                    font-weight: bold;
+                    color: var(--cor-de-icone);
 
-.Preco {
-    margin-top: 5px;
-    font-size: 18px;
-    font-weight: bold;
-    color: var(--cor-da-letrapreco);
+                }
+            }
 
-}
+            .Preco {
+                margin-top: 5px;
+                font-size: 18px;
+                font-weight: bold;
+                color: var(--cor-da-letrapreco);
 
-.Preco button {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 14px;
-    font-weight: bold;
-    color: rgb(252, 250, 250);
-    text-decoration: none;
-    border: 2px solid #BCA078;
-    border-radius: 30px;
-    /* Arredonda as bordas */
-    background: var(--cor-do-fundo-da-borda);
-    cursor: pointer;
-    transition: 0.3s;
+                & button {
+                    display: inline-block;
+                    padding: 10px 20px;
+                    font-size: 14px;
+                    font-weight: bold;
+                    color: rgb(252, 250, 250);
+                    text-decoration: none;
+                    border: 2px solid #BCA078;
+                    border-radius: 30px;
+                    /* Arredonda as bordas */
+                    background: var(--cor-do-fundo-da-borda);
+                    cursor: pointer;
+                    transition: 0.3s;
+                }
+            }
+        }
+    }
 }
 
 /*#endregion*/
@@ -291,69 +295,77 @@ nav ul li a {
 
 /*#region nosso segredo*/
 
-.container-nosso-segredo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 15vh;
-    text-align: center;
+.container2 {
 
-    & .texto-pele {
+    & .container3 {
 
+        & .container-nosso-segredo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 10vh;
+            text-align: center;
 
-        & h3 {
-            margin-top: auto;
+            & .texto-pele {
 
-        }
+                & h3 {
+                font-size: 24px;
+                color: #101010;
 
-        & h1 {
-            margin-top: auto;
-            color: var(--cor-da-letras)
-        }
+                }
 
-
-    }
-}
-
-
-.pele-com-aparencia-mais-jovem {
-    padding: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-
-    .texto-box {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width: 100%;
-
-        & .primeiro,
-        .meio,
-        .final {
-            color: #5f5f5f;
-
-            & h3 {}
-
-            & h4 {
-                color: #1B1B1B;
-                margin-top: 20px;
+                & h1 {
+                    font-size: 35px;
+                    font-family: var(--fonte-kameron);
+                    color: var(--cor-da-letras)
+                }
             }
         }
-
-        .linha-vertical {
-            width: 2px;
-            height: 200px;
-            background-color: #c4b7a6;
-            margin: 0 20px;
-
-
-
+        .pele-com-aparencia-mais-jovem {
+            padding: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        
+            .texto-box {
+                display: flex;
+                gap: 100px;
+              
+              
+        
+                & .primeiro,
+                .meio,
+                .final {
+                    color: #5f5f5f;
+        
+                    & h3 {}
+        
+                    & h4 {
+                        color: #1B1B1B;
+                        margin-top: 20px;
+                    }
+                }
+        
+                .linha-vertical {
+                    width: 2px;
+                    height: 200px;
+                    background-color: #c4b7a6;
+                    margin: 0 20px;
+        
+        
+        
+                }
+        
+            }
         }
-
     }
 }
+
+
+
+
+
 
 /*#endregion*/
 
@@ -404,7 +416,7 @@ nav ul li a {
 
                 & .slide1,
                 & .slide2,
-                & .slide3{
+                & .slide3 {
 
                     flex: 1 0 100%;
                     display: flex;
@@ -415,9 +427,10 @@ nav ul li a {
                         color: var(--cor-da-letras);
                         margin-bottom: 5px;
                         font-size: 25pt;
-                        margin-top:20px;
+                        margin-top: 20px;
                     }
-                    & p{
+
+                    & p {
                         margin-bottom: 30px;
                         font-size: 17px;
                     }
