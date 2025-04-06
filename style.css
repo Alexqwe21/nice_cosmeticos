@@ -1,4 +1,5 @@
 /*#region global*/
+
 * {
     margin: 0;
     padding: 0;
@@ -18,8 +19,12 @@
     --cor-do-fundo-produtos: #D4D4D4;
     --cor-do-fundo-da-borda: #BCA078;
     --cor-da-letras: #9B7235;
+    --cor-de-fundo: #D4D4D4;
+    --fonte-kameron: "Kameron";
 
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Kameron:wght@400..700&display=swap');
 
 /*#endregion*/
 
@@ -183,84 +188,103 @@ nav ul li a {
 /*#endregion*/
 
 /*#region pele perfeita*/
+.pele-perfeita {
 
-.container {
-    display: flex;
-    width: 100%;
-    max-width: 400%;
-    background-color: var(--cor-do-fundo-produtos);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-height: 500%;
+    background-color: var(--cor-de-fundo);
+
+    & .site {
+
+        & .container {
+            display: flex;
+            width: 100%;
+            padding: 20px;
+            border-radius: 10px;
+            justify-content: space-between;
+
+
+            & .texto {
+                width: 50%;
+
+
+                & h3 {
+                    font-size: 14px;
+                    color: var(--cor-da-letrapreco);
+                    margin-bottom: 30px;
+                    letter-spacing: 2px;
+                    font-weight: bold;
+                }
+
+                & h2 {
+                    font-size: 24px;
+                    margin-bottom: 10px;
+                    line-height: 1.4;
+                    margin-top: 10px;
+
+                }
+
+                & p {
+                    font-size: 16px;
+                    color: #555;
+                    margin-bottom: 20px;
+
+                }
+
+                & button {
+                    display: inline-block;
+                    padding: 10px 20px;
+                    font-size: 14px;
+                    font-weight: bold;
+                    color: black;
+                    text-decoration: none;
+                    border: 2px solid black;
+                    border-radius: 30px;
+                    /* Arredonda as bordas */
+                    background: transparent;
+                    cursor: pointer;
+                    transition: 0.3s;
+
+                }
+
+            }
+
+            & .container-antes-depois {
+                display: flex;
+                justify-content: space-between;
+                /* Espaço entre as imagens */
+                align-items: center;
+                /* Alinhar verticalmente */
+
+
+                & .before_image,
+                .after_image {
+                    flex: 1;
+                    text-align: center;
+
+                }
+
+
+                & .before_image img,
+                .after_image img {
+                    width: 80%;
+                    height: auto;
+
+                }
+            }
+        }
+    }
 }
 
-.texto {
-    flex: 1;
-    padding: 20px;
 
-}
 
-.texto h3 {
-    font-size: 14px;
-    color: var(--cor-da-letrapreco);
-    margin-bottom: 30px;
-    letter-spacing: 2px;
-    font-weight: bold;
 
-}
 
-.texto h1 {
-    font-size: 24px;
-    margin-bottom: 10px;
-    line-height: 1.4;
-    margin-top: 10px;
-}
 
-.texto p {
-    font-size: 16px;
-    color: #555;
-    margin-bottom: 20px;
-}
 
-button {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 14px;
-    font-weight: bold;
-    color: black;
-    text-decoration: none;
-    border: 2px solid black;
-    border-radius: 30px;
-    /* Arredonda as bordas */
-    background: transparent;
-    cursor: pointer;
-    transition: 0.3s;
-}
 
-.container-antes-depois {
-    display: flex;
-    justify-content: space-between;
-    /* Espaço entre as imagens */
-    align-items: center;
-    /* Alinhar verticalmente */
-}
 
-.before_image,
-.after_image {
-    flex: 1;
-    /* Cada parte ocupa metade do espaço disponível */
-    text-align: center;
-    /* Centraliza o texto */
-}
 
-.before_image img,
-.after_image img {
-    width: 80%;
-    /* Ajuste para o tamanho desejado */
-    height: auto;
-    /* Mantém a proporção da imagem */
-}
+
+
 
 
 /*#endregion*/
@@ -334,85 +358,69 @@ button {
 /*#endregion*/
 
 /*#region carrossel*/
+
+
+
 .carrossel-container {
-    max-width: 800px;
-    margin: auto;
+    background: #F4F4F4;
+    padding: 30px;
 
-    & h4 {
-        text-align: center;
-    }
 
-    & h2 {
-        text-align: center;
-        color: var(--cor-da-letras);
-    }
 
-    & .carrossel {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: auto;
-        overflow: hidden;
+    & .site {
 
-        & .slides {
+        & h4 {
+            text-align: center;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            color: #4A4A4A;
+        }
+
+        & h2 {
+            text-align: center;
+            color: var(--cor-da-letras);
+            font-family: var(--fonte-kameron);
+            text-transform: uppercase;
+            margin-bottom: 45px;
+            font-size: 40px;
+            font-weight: 400;
+        }
+
+        & .carrossel {
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
             width: 100%;
-            transition: transform 0.5s ease;
+            height: auto;
+            overflow: hidden;
 
-            & .slide1 {
-                flex: 1 0 100%;
+            & .slides {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-
-                & img {
-                    width: 100px;
-                    height: auto;
-                    display: block;
-                }
-
-                & h3 {
-                    color: var(--cor-da-letras);
-                }
-            }
+                width: 100%;
+                transition: transform 0.5s ease;
 
 
-            & .slide2 {
-                flex: 1 0 100%;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
+                & .slide1,
+                & .slide2,
+                & .slide3{
 
-                & img {
-                    width: 100px;
-                    height: auto;
-                    display: block;
-                    margin: auto;
-                }
+                    flex: 1 0 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
 
-                & h3 {
-                    color: var(--cor-da-letras);
-                }
-            }
-
-            & .slide3 {
-                flex: 1 0 100%;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-
-                & img {
-                    width: 150px;
-                    height: auto;
-                    display: block;
-                    margin: auto;
-                }
-
-                & h3 {
-                    color: var(--cor-da-letras);
+                    & h3 {
+                        color: var(--cor-da-letras);
+                        margin-bottom: 5px;
+                        font-size: 25pt;
+                        margin-top:20px;
+                    }
+                    & p{
+                        margin-bottom: 30px;
+                        font-size: 17px;
+                    }
                 }
             }
         }
@@ -442,6 +450,22 @@ button {
 
 /*#endregion*/
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .Felicidade {
     margin: auto;
     margin-top: 50px;
@@ -461,10 +485,10 @@ button {
         margin: auto;
         margin-top: 50px;
 
-        & img{
+        & img {
             width: 45%;
             padding-left: 20px;
-            
+
         }
 
 
@@ -513,7 +537,7 @@ button {
                 top: -400px;
             }
 
-            & img{
+            & img {
                 width: 70px;
             }
 
