@@ -210,8 +210,8 @@ nav ul li a {
 
 
             & .texto {
-              
-            padding-right: 30px;
+
+                padding-right: 30px;
 
 
 
@@ -307,7 +307,7 @@ nav ul li a {
 
 .container2 {
 
-    & .container3 {
+    & .site {
 
         & .container-nosso-segredo {
             display: flex;
@@ -381,8 +381,6 @@ nav ul li a {
 /*#endregion*/
 
 /*#region carrossel*/
-
-
 
 .carrossel-container {
     background: #F4F4F4;
@@ -565,6 +563,70 @@ nav ul li a {
                 width: 70px;
             }
 
+        }
+
+    }
+}
+
+
+
+
+
+
+.desvende {
+
+    margin: auto;
+
+    & .tendecias {
+        text-align: center;
+
+        & h4 {
+            padding: 10px;
+            color: #4A4A4A;
+
+        }
+
+        h1 {
+            color: var(--cor-da-letras);
+
+        }
+
+    }
+
+
+}
+
+
+
+
+.container4 {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    & .item1 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        margin-top: 30px;
+        gap: 13%;
+
+
+
+
+        & .produto {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            border-radius: 8px;
+
+        }
+
+        & img {
+            max-width: 80%;
         }
 
     }
