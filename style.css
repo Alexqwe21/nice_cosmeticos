@@ -473,10 +473,7 @@ nav ul li a {
 /*#endregion*/
 
 
-/*#region carrossel*/
-
-
-
+/*#region Felicidade*/
 
 .Felicidade {
     margin: auto;
@@ -565,54 +562,57 @@ nav ul li a {
 /*#endregion*/
 
 
-
-
-
-
-
-
 .desvende {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 40px 0;
+    text-align: center;
 
     & .site {
-        .tendecias {
-            margin: auto;
-            text-align: center;
+        background: #7474741f;
+
+        & .tendecias {
 
             & h4 {
-                padding: 10px;
-                color: #4A4A4A;
+                font-size: 18px;
+                color: #444;
+
 
             }
 
             & h1 {
-                color: var(--cor-da-letras);
+                font-size: 26px;
+                color: #9B7235;
+                margin-bottom: 30px;
+            }
+        }
+
+        .produtos {
+
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            /* 3 colunas */
+            gap: 30px;
+            justify-items: center;
+            /* centraliza cada imagem dentro da célula */
+            max-width: 800px;
+            margin: 0 auto;
+
+            & img {
+                width: 170px;
+                height: auto;
+                object-fit: contain;
 
             }
 
-        }
-
-        & .item1 {
-
-
-
-
-            & .Produtos {
-
-                display: grid;
-                grid-template-columns: repeat(3, 1fr); /* 3 colunas */
-                gap: 20px;
-                justify-items: center; /* centraliza cada imagem na célula */
-                max-width: 600px; /* controla a largura total do grid */
-                margin: 0 auto; /* centraliza o grid na tela */
-
+            & .produto1,
+            .produto2,
+            .produto3,
+            .produto4,
+            .produto5,
+            .produto6 {
+                background: rgb(253, 253, 253);
 
             }
-
-           
         }
+
     }
-
 }
