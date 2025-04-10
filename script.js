@@ -29,4 +29,3 @@ window.addEventListener('load', () => {
   startAutoplay(); // Inicia o autoplay
 });
 
-aaç
