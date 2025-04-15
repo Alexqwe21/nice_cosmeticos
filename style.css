@@ -848,47 +848,100 @@ nav ul li a {
                 & .logo-text {
                     font-size: 20px;
                     font-weight: bold;
-                    margin:auto;
+                    margin: auto;
                 }
 
-              
+
             }
         }
 
+        & .menu {
+            min-width: 120px;
+            margin-top: 25px;
+            margin-left: 30px;
+            text-align: center;
+
+
+            & p {
+                margin-top: 20px;
+            }
+        }
+
+        & .Marcas-Polulares {
+            margin: 20px;
+            text-align: center;
+
+
+
+            & p {
+                margin-top: 15px;
+            }
+
+            & h4 {
+                margin-top: 3px;
+            }
+
+
+        }
+
+        & .categoria {
+            margin: 20px;
+            text-align: center;
+
+
+
+            & p {
+                margin-top: 15px;
+            }
+
+            & h4 {
+                margin-top: 3px;
+            }
+        }
+
+        & .destaque {
+            color: #b1762c;
+            flex: 1;
+            margin: 10px;
+
+
+            & input {
+                padding: 5px;
+                width: 80%;
+                margin-top: 10px;
+            }
+
+            & button {
+                background: none;
+                border: none;
+                cursor: pointer;
+                font-size: 18px;
+                margin-left: -30px;
+            }
+
+            & .social-icons{
+
+
+                & span{
+                    font-size: 18px;
+                    margin-right: 10px;
+                    cursor: pointer;
+                }
+            }
+        }
     }
 }
 
 
 
 
-.col h4 {
-    font-weight: bold;
-    margin-bottom: 10px;
-}
 
-.col .destaque {
-    color: #b1762c;
-}
 
-.col input {
-    padding: 5px;
-    width: 80%;
-    margin-top: 10px;
-}
 
-.col button {
-    background: none;
-    border: none;
-    cursor: pointer;
-    font-size: 18px;
-    margin-left: -30px;
-}
 
-.social-icons span {
-    font-size: 18px;
-    margin-right: 10px;
-    cursor: pointer;
-}
+
+
+
 
 .footer-bottom {
     border-top: 2px solid #b1762c;
