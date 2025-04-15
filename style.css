@@ -797,83 +797,69 @@ nav ul li a {
     }
 }
 
+.final {
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.footer {
     background-color: #f9f6f3;
     color: #333;
     padding: 20px;
-    font-size: 14px;
+
+
+    & .site {
+
+        margin: auto;
+
+        & .footer {
+            margin: auto;
+
+            & .info-bar {
+                display: flex;
+                justify-content: space-around;
+                border-top: 3px solid #b1762c;
+                border-bottom: 3px solid #b1762c;
+                padding: 10px 0;
+                font-weight: bold;
+
+                & div {
+                    .icon {
+                        width: 20px;
+                        margin-right: 8px;
+                        vertical-align: middle;
+                    }
+                }
+            }
+        }
+
+        & .footer-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 20px;
+
+            & .col {
+                flex: 1;
+                min-width: 160px;
+                margin: 10px;
+
+                & img {
+                    width: 60px;
+                    height: 60px;
+                }
+
+                & .logo-text {
+                    font-size: 20px;
+                    font-weight: bold;
+                    margin:auto;
+                }
+
+              
+            }
+        }
+
+    }
 }
 
-.info-bar {
-    display: flex;
-    justify-content: space-around;
-    border-top: 3px solid #b1762c;
-    border-bottom: 3px solid #b1762c;
-    padding: 10px 0;
-    font-weight: bold;
-}
 
-.info-bar .icon {
-    width: 20px;
-    margin-right: 8px;
-    vertical-align: middle;
-}
 
-.footer-content {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 20px 0;
-}
-
-.col {
-    flex: 1;
-    min-width: 160px;
-    margin: 10px;
-}
-
-.col img {
-    width: 60px;
-    height: 60px;
-}
-
-.logo-text {
-    font-size: 18px;
-    font-weight: bold;
-    margin: 10px 0;
-}
 
 .col h4 {
     font-weight: bold;
