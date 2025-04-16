@@ -864,6 +864,10 @@ nav ul li a {
             & p {
                 margin-top: 20px;
             }
+
+            & h4{
+                color: #b1762c;
+            }
         }
 
         & .Marcas-Polulares {
@@ -878,6 +882,7 @@ nav ul li a {
 
             & h4 {
                 margin-top: 3px;
+                color: #b1762c;
             }
 
 
@@ -887,7 +892,7 @@ nav ul li a {
             margin: 20px;
             text-align: center;
 
-
+           
 
             & p {
                 margin-top: 15px;
@@ -895,14 +900,18 @@ nav ul li a {
 
             & h4 {
                 margin-top: 3px;
+                color: #b1762c;
             }
         }
 
         & .destaque {
-            color: #b1762c;
+           
             flex: 1;
             margin: 10px;
 
+            & h4{
+                color: #b1762c;
+            }
 
             & input {
                 padding: 5px;
@@ -918,46 +927,43 @@ nav ul li a {
                 margin-left: -30px;
             }
 
-            & .social-icons{
+            & .social-icons {
 
 
-                & span{
+                & span {
                     font-size: 18px;
                     margin-right: 10px;
                     cursor: pointer;
                 }
             }
         }
+
+        & .footer-bottom {
+            border-top: 2px solid #b1762c;
+            margin-top: 20px;
+            padding-top: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+
+
+
+
+
+            & a {
+                color: #b1762c;
+                text-decoration: none;
+            }
+
+            & .payments {
+
+                & img {
+                    height: 25px;
+                    margin-left: 10px;
+                }
+            }
+        }
+
     }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-.footer-bottom {
-    border-top: 2px solid #b1762c;
-    margin-top: 20px;
-    padding-top: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.footer-bottom a {
-    color: #b1762c;
-    text-decoration: none;
-}
-
-.footer-bottom .payments img {
-    height: 25px;
-    margin-left: 10px;
 }
