@@ -472,11 +472,10 @@ nav ul li a {
 
 /*#endregion*/
 
-
 /*#region Felicidade*/
 
 .Felicidade {
-    margin: auto;
+    margin: 10px 0;
     margin-top: 50px;
 
     & .site {
@@ -537,7 +536,7 @@ nav ul li a {
                 align-items: center;
                 width: 200px;
                 /* Ajuste conforme necessário */
-                margin: auto;
+             
                 margin-top: 40px;
                 padding-left: 16%;
 
@@ -561,8 +560,7 @@ nav ul li a {
 
 /*#endregion*/
 
-
-/*#region Felicidade*/
+/*#region Descende*/
 .desvende {
     padding: 40px 0;
     text-align: center;
@@ -617,11 +615,9 @@ nav ul li a {
 
     }
 }
-
-
 /*#endregion*/
 
-
+/*#region noticias*/
 .Noticias {
 
     & .site {
@@ -722,9 +718,9 @@ nav ul li a {
         }
     }
 }
+/*#endregion*/
 
-
-
+/*#region nosso-top*/
 .Nosso-top {
     margin: auto;
     padding: 40px;
@@ -796,7 +792,9 @@ nav ul li a {
         }
     }
 }
+/*#endregion*/
 
+/*#region footer*/
 .final {
 
     background-color: #f9f6f3;
@@ -967,3 +965,16 @@ nav ul li a {
 
     }
 }
+/*#endregion*/
+
+
+
+
+
+
+
+
+
+
+
+
